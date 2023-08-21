@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<style type="text/css">
+		
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	
+	background:black;
+	height: 100vh;
+	width:100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	border-left:2px solid gold;
+	border-top:2px solid gold;
+min-height: 100vh;
+			
+}
+
+body,table{
+		background:#042104;
+		width: 100%;
+		height: 100vh;
+
+  	animation: animate 10s linear infinite;
+  	box-shadow: 0 0 10px #00ff0a,
+			 			0 0 20px #00ff0a,
+			 			0 0 40px #00ff0a,
+			 			0 0 60px #00ff0a,
+			 			0 0 80px #00ff0a,
+			 			0 0 100px #00ff0a;
+}
+@keyframes animate{
+			0%{
+				filter: hue-rotate(0deg);
+			}
+			100%{
+				filter: hue-rotate(360deg);
+			}
+		}
+
+	
+ 
+*{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+.photo{
+position: relative;
+width: 400px;
+height: 400px;
+background:gold;
+border-radius: 50%;
+overflow: hidden;
+padding: 10px;
+margin-top: 100px;
+		}
+		.photo::before{
+			content: '';
+			position: absolute;
+			inset:-20px 140px;
+			background:linear-gradient(315deg,#14ffe9,#ff00e0,#d400d4);
+			transition: 0.5s;
+			animation: rotateBorder 5s linear infinite;
+		}
+		.photo:hover::before{
+			inset:-20px 0px;
+		}
+		@keyframes rotateBorder{
+			0%{
+				transform: rotate(0deg);
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+		.photo::after{
+
+			content: '';
+			position:absolute;
+			inset:6px;
+			background:#162052;
+			border-radius: 50%;
+			z-index:1;
+
+		}
+		.content{
+			position: absolute;
+			inset:30px;
+			border: 6px solid #070a1c;
+			z-index:3;
+			border-radius: 50%;
+			overflow: hidden;
+			background:rgba(222,49,99,1);
+}
+.content img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	object-fit:cover;
+	pointer-events: none;
+	transition: 0.5 sec;
+z-index: 3;
+}
+.photo:hover .content img{
+opacity:0;
+}
+.content h2{
+	position: relative;
+	font-size: 35px;
+	text-align: center;
+margin-top: 100px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: gold;
+}
+.content h2 span{
+font-weight: 300;
+font-size: 0.75em;
+
+}
+.content input{
+	text-align: center;
+	margin-right: 70px;
+	padding: 10px;
+width:150px;
+height: 50px;
+font-size: 32px;
+font-weight: bolder;
+color:gold;
+font-style: italic;
+background:aqua;
+border:none;
+margin-left: 80px;
+}
+#t1{
+	line-height:1.2;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: bold;
+	color:gold;
+	opacity: 1;
+	padding-top:100px;
+}
+	</style>
+
+
+</head>
+<body>
+
+	
+
+<table  style="margin-bottom: 400px;margin-top: 0;" cellspacing="60px;">
+	<tr>
+		<td>
+			<div style="color:aqua;text-align: center;font-size: 40px;">About Me</div>
+<div class="photo" >
+	
+	<div class="content">
+		
+	<img src="image9.jpeg">
+
+	<h2><span>Skilled <br>FrontEnd DEVeloper</span></h2>
+	<br>
+
+	<input type="submit" name="" value="Hire me" >
+
+</td>
+<td id="t1">
+        <p style="font-size: 32px">Hello, I'm Suhana,</p><p style="font-size: 25px;text-shadow:0px;"> A passionate front-end developer with a creative mindset and an eye for design. I specialize in creating visually stunning and user-friendly websites that deliver an exceptional user experience.</p>
+        
+      
+        <p style="font-size: 25px">When I'm not coding, you'll find me exploring new design trends, experimenting with creative concepts, or collaborating with fellow developers on exciting projects. My goal is to contribute to the ever-evolving world of web development by creating digital experiences that leave a mark.</p>
+        <p style="font-size: 25px">If you're looking for a developer who is not only skilled but also passionate about turning ideas into reality, I'd love to connect with you. Let's work together to create something extraordinary!</p>
+    </div>
+</body>
+</tr>
+</table>
+</div>
+</div>
+</section>
+</body>
+</html>
